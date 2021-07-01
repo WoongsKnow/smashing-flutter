@@ -19,7 +19,7 @@ class _BookingItemState extends State<BookingItem> {
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               ListTile(
-                tileColor: Colors.grey,
+                // tileColor: Colors.grey,
                 title: Row(
                   children: <Widget>[
                     Text(
