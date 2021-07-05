@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'dart:ui';
 import '../model/model_movie.dart';
+import '../controllers/test_controller.dart';
+
+
 class DetailScreen extends StatefulWidget {
   final Movie movie;
   DetailScreen({required this.movie});
@@ -9,6 +13,7 @@ class DetailScreen extends StatefulWidget {
 
 class _DetailScreenState extends State<DetailScreen> {
   bool like = false;
+  final TestController c = Get.find();
   @override
   initState() {
     super.initState();
@@ -55,7 +60,7 @@ class _DetailScreenState extends State<DetailScreen> {
                                 Container(
                                   padding: EdgeInsets.all(7),
                                   child: Text(
-                                    '99% 일치 2019 15 + 시즌 1개',
+                                    '99% 일치 2019 15 + 시즌 1개 + ${c.count}',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(fontSize: 13)
                                   )

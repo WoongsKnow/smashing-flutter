@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'widget/bottom_bar.dart';
 
 //screen
@@ -20,7 +21,7 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Woongflix',
       theme: ThemeData(
         brightness: Brightness.dark,
